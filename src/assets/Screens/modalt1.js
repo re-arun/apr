@@ -193,6 +193,7 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontWeight: '600',
     textAlign: 'right',
+    width:320,
   },
   txt2: {
     color: 'grey',
