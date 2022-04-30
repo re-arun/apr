@@ -25,7 +25,7 @@ function HomeScreen({navigation}) {
       <View
         style={{
           flex: 1,
-          flexWrap: 1,
+          
           alignItems: 'center',
           justifyContent: 'space-between',
           flexDirection: 'column',

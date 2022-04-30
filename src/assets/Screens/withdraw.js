@@ -10,6 +10,7 @@ import {
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {TextInput} from 'react-native-gesture-handler';
+import { TOUCHABLE_STATE } from 'react-native-gesture-handler/lib/typescript/components/touchables/GenericTouchable';
 const {width, height} = Dimensions.get('window');
 
 const Withdraw = ({navigation}) => {
@@ -58,9 +59,12 @@ const Withdraw = ({navigation}) => {
         </View>
 
         <View style={{height: 10}}></View>
+        
         <View style={styles.tit}>
+        
           <Text style={{color: 'grey'}}>Choose Your Wallet</Text>
         </View>
+        <TouchableOpacity>
         <View style={styles.tiv2}>
           <View style={styles.tivv}>
             <View style={{width:30}}>
@@ -72,7 +76,7 @@ const Withdraw = ({navigation}) => {
             </View>
           </View>
         </View>
-
+</TouchableOpacity>
         <View style={{}}>
           <View style={styles.tov}>
             <TouchableOpacity style={styles.to}>
