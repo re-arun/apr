@@ -16,59 +16,40 @@ const Register = ({navigation}) => (
   <SafeAreaView style={styles.scontainer}>
     <View style={styles.container}>
       <View style={styles.con2}>
-        <Text
-          style={styles.title}>
-          Register  &  Play
-        </Text>
+        <Text style={styles.title}>Register & Play</Text>
       </View>
       <View style={styles.imv}>
-        <Icon
-          name="crown"
-          size={30}
-          color={'white'}
-          style={styles.im}
-        />
+        <Icon name="crown" size={30} color={'white'} style={styles.im} />
       </View>
       <View style={styles.h}>
         <Text style={styles.txt}>We will send you confirmation code</Text>
       </View>
-      <View
-        style={styles.ti}>
-      <View style={styles.icvi}>
-        </View>
+      <View style={styles.ti}>
+        <View style={styles.icvi}></View>
         <View style={styles.imvi}>
-        <Image
-          source={require('../Images/india.jpeg')}
-          style={styles.flg}
-        />
+          <Image source={require('../Images/india.jpeg')} style={styles.flg} />
         </View>
         <View style={styles.icvi}>
-        <TouchableOpacity>
-
-        <Icon name="angle-down" />
-        </TouchableOpacity>
+          <TouchableOpacity>
+            <Icon name="angle-down" />
+          </TouchableOpacity>
         </View>
         <View style={styles.icvi}>
-       <View style={styles.verticleline}>
-
-       </View>
-      </View>
+          <View style={styles.verticleline}></View>
+        </View>
         <TextInput placeholder="9346573823" placeholderTextColor={'black'} />
       </View>
-      <View
-        style={styles.toview}>
-        <View >
+      <View style={styles.toview}>
+        <View>
           <TouchableOpacity
             style={styles.to}
-            onPress={() => navigation.navigate("Home")}>
+            onPress={() => navigation.navigate('Home')}>
             <Text style={styles.txt}>Register</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.ch}></View>
         <View>
-          <Text style={styles.txt}>
-            By Registering I Agree To TIAR's T&Cs
-          </Text>
+          <Text style={styles.txt}>By Registering I Agree To TIAR's T&Cs</Text>
         </View>
       </View>
     </View>
@@ -92,18 +73,18 @@ const styles = StyleSheet.create({
     height: height / 6,
     justifyContent: 'flex-end',
   },
-  title:
-  {color: 'rgb(253, 106, 67)',
-   fontFamily: 'Copperplate', 
-   fontSize: 30,
-   letterSpacing:-3.5,
+  title: {
+    color: 'rgb(253, 106, 67)',
+    fontFamily: 'Copperplate',
+    fontSize: 30,
+    letterSpacing: -3.5,
   },
 
-  imv:{height: height / 5, justifyContent: 'center'},
-  im:{alignSelf: 'center'},
-  h:{height: 40},
-txt:{color: 'white'}, 
-ti:{
+  imv: {height: height / 5, justifyContent: 'center'},
+  im: {alignSelf: 'center'},
+  h: {height: 40},
+  txt: {color: 'white'},
+  ti: {
     flexDirection: 'row',
     backgroundColor: 'white',
     height: 40,
@@ -113,40 +94,33 @@ ti:{
     borderRadius: 10,
     alignItems: 'center',
   },
-  flg:{
-    height: 15, 
+  flg: {
+    height: 15,
     width: 20,
-    borderRadius:2
-  
-},
-toview:{
+    borderRadius: 2,
+  },
+  toview: {
     height: height * 0.29,
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
-  to:{
+  to: {
     backgroundColor: 'rgb(253, 106, 67)',
     height: 35,
     width: width * 0.4,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  ch:{height: 20},
-  imvi:{
-      width:30
+  ch: {height: 20},
+  imvi: {
+    width: 30,
   },
-  icvi:{
-      width:18,
-     
-      
+  icvi: {
+    width: 18,
   },
-  verticleline:{
-   
-    borderLeftWidth:2,
-    borderLeftColor:'rgb(225, 230, 237)',
-    height:35
-  }
-
-
-
+  verticleline: {
+    borderLeftWidth: 2,
+    borderLeftColor: 'rgb(225, 230, 237)',
+    height: 35,
+  },
 });

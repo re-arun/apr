@@ -1,40 +1,42 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Modal from 'react-native-modal';
-import { View, Text, StyleSheet, Button } from 'react-native';
-
-const Test = () => {
+import {View, Text, StyleSheet, Button} from 'react-native';
+import CheckBox from '@react-native-community/checkbox';
+import react from 'react';
+const Test = ({navigation}) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleOpenModalPress = () => setIsModalVisible(true);
   const handleCloseModalPress = () => setIsModalVisible(false);
+  const [isSelected, setSelection] = useState(false);
 
   return (
     <View style={styles.container}>
-      <Button title="Open Modal" onPress={handleOpenModalPress} />
-      
-      <Modal isVisible={isModalVisible} hasBackdrop={true}>
-        <View style={styles.modalContentContainer}>
-          <Text>Modal text</Text>
-          <Button onPress={handleCloseModalPress} title="Close Modal"/>
-        </View>
-      </Modal>
+      <View style={styles.checkboxContainer}>
+       <Text onPress={() => navigation.navigate("Home")}> helllll</Text>
+        <Text style={styles.label}>Do you like React Native?</Text>
+      </View>
+      <Text>Is CheckBox selected: {isSelected ? '👍' : '👎'}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor:"lightblue",
     flex: 1,
+    alignItems: 'center',
     justifyContent: 'center',
-    alignItems:'center'
   },
-  modalContentContainer: {
-    backgroundColor:"white",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 10
-  }
+  checkboxContainer: {
+    flexDirection: 'row',
+    marginBottom: 20,
+  },
+  checkbox: {
+    alignSelf: 'center',
+  },
+  label: {
+    margin: 8,
+  },
 });
 
 export default Test;

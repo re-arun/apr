@@ -13,68 +13,67 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const {height, width} = Dimensions.get('window');
 const Insurance = ({navigation}) => {
   return (
-    <SafeAreaView >
-      <ScrollView showsVerticalScrollIndicator={false} style={styles.container} >
-      <View style={styles.scr}>
-
-        <View style={{flexDirection:'row'}}>
-          <TouchableOpacity
-            style={styles.to1}
-            onPress={() => navigation.navigate('Home')}>
-            <Icon
-              name="arrow-left"
-              size={35}
-              style={styles.ico}
-              color={'white'}
-            />
-          </TouchableOpacity>
-          <View style={styles.container1}>
-            <Text style={styles.title}>Car Insurance</Text>
-          </View>
-        </View>
-        <View style={{height: 25}}></View>
-        <View style={styles.imgv}>
-          <Image source={require('../Images/1.jpeg')} style={styles.imgs} />
-        </View>
-        <View style={{height: 25}}></View>
-
-        <View style={styles.tv}>
-          <View style={styles.tvf}>
-            <View>
-              <Text style={styles.lefttitle}>Policy Details</Text>
-              <Text style={styles.left}>Units 4Unit/USD 3000</Text>
-              <View style={{height: 15}}></View>
-
-              <Text style={styles.left}>Price</Text>
-              <Text style={styles.left}>Minimum Purchase</Text>
-              <Text style={styles.left}>Payout frequency</Text>
-              <Text style={styles.left}>Currency Type</Text>
-            </View>
-            <View>
-              <Text style={styles.righttitle}>Date:24-April-2021</Text>
-              <View style={{height: 50}}></View>
-              <Text style={styles.righttext}>$ 427</Text>
-              <Text style={styles.righttext}>2-Units</Text>
-              <Text style={styles.righttext}>Monthly</Text>
-              <Text style={styles.righttext}>USD</Text>
+    <SafeAreaView>
+      <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+        <View style={styles.scr}>
+          <View style={{flexDirection: 'row'}}>
+            <TouchableOpacity
+              style={styles.to1}
+              onPress={() => navigation.navigate('Home')}>
+              <Icon
+                name="arrow-left"
+                size={35}
+                style={styles.ico}
+                color={'white'}
+              />
+            </TouchableOpacity>
+            <View style={styles.container1}>
+              <Text style={styles.title}>Car Insurance</Text>
             </View>
           </View>
-        </View>
-        <View
-          style={{
-            justifyContent: 'flex-end',
-            height: height * 0.24,
-          }}>
+          <View style={{height: 25}}></View>
+          <View style={styles.imgv}>
+            <Image source={require('../Images/1.jpeg')} style={styles.imgs} />
+          </View>
+          <View style={{height: 25}}></View>
+
+          <View style={styles.tv}>
+            <View style={styles.tvf}>
+              <View>
+                <Text style={styles.lefttitle}>Policy Details</Text>
+                <Text style={styles.left}>Units 4Unit/USD 3000</Text>
+                <View style={{height: 15}}></View>
+
+                <Text style={styles.left}>Price</Text>
+                <Text style={styles.left}>Minimum Purchase</Text>
+                <Text style={styles.left}>Payout frequency</Text>
+                <Text style={styles.left}>Currency Type</Text>
+              </View>
+              <View>
+                <Text style={styles.righttitle}>Date:24-April-2021</Text>
+                <View style={{height: 50}}></View>
+                <Text style={styles.righttext}>$ 427</Text>
+                <Text style={styles.righttext}>2-Units</Text>
+                <Text style={styles.righttext}>Monthly</Text>
+                <Text style={styles.righttext}>USD</Text>
+              </View>
+            </View>
+          </View>
           <View
             style={{
-              alignSelf: 'center',
+              justifyContent: 'flex-end',
+              height: height * 0.24,
             }}>
-            <TouchableOpacity style={styles.subm}>
-              <Text style={styles.submtext}>Buy Now</Text>
-            </TouchableOpacity>
+            <View
+              style={{
+                alignSelf: 'center',
+              }}>
+              <TouchableOpacity style={styles.subm}>
+                <Text style={styles.submtext}>Buy Now</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
-      </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -92,14 +91,14 @@ const styles = StyleSheet.create({
   },
   to1: {
     backgroundColor: 'rgb(113,222,207)',
-    height: 50,
-    width: width * 0.13,
+    height: 40,
+    width: 40,
     justifyContent: 'center',
     borderRadius: 10,
     alignItems: 'center',
   },
   ico: {
-    width:width*.08
+    width: width * 0.08,
   },
   container1: {
     height: 45,
@@ -109,7 +108,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 35,
+    fontSize: 32,
     alignSelf: 'center',
   },
   imgv: {
@@ -144,8 +143,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  scr:{
-    width:width*0.9,
+  scr: {
+    width: width * 0.9,
     // backgroundColor:'red'
-  }
+  },
 });
