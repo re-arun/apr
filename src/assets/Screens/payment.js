@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
   twi: {
     flexDirection: 'row',
     alignItems: 'center',
+    
   },
   icov: {
     height: 50,

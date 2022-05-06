@@ -134,7 +134,8 @@ const styles = StyleSheet.create({
     width: width * 0.9,
     backgroundColor: 'rgb(232, 235, 233)',
     borderRadius: 10,
-    textAlign:'auto'
+    textAlign:'auto',
+    
   },
   tinput1: {
     height: 50,

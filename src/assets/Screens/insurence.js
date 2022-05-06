@@ -84,7 +84,7 @@ export default Insurance;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    // backgroundColor: '',
+    //  backgroundColor: 'red',
     height: height / 1,
     width: width * 0.9,
     alignSelf: 'center',
@@ -116,6 +116,7 @@ const styles = StyleSheet.create({
     width: width * 0.9,
     justifyContent: 'center',
     alignSelf: 'center',
+    //backgroundColor: 'red',
   },
   imgs: {
     alignSelf: 'center',

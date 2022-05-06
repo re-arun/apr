@@ -159,17 +159,18 @@ img: {
   // borderRadius:20
   borderTopLeftRadius:20,
   borderBottomLeftRadius:20,
-  overflow:'hidden'
+  overflow:'hidden',
+  //backgroundColor:"cyan"
 },
 container: {
-  // backgroundColor:'yellow',
+ // backgroundColor:'yellow',
   height: height * 0.12,
   width: width * 0.75,
   alignSelf: 'center',
   justifyContent: 'center',
 },
 container1: {
-  // backgroundColor:'red',
+   //backgroundColor:'red',
   height: height * 0.11,
   width: width * 0.7,
   alignSelf: 'center',

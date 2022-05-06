@@ -13,12 +13,14 @@ import Login from './src/assets/Screens/login';
 import Withdraw from './src/assets/Screens/withdraw';
 import Modals from './src/assets/Screens/modalt1';
 import Test from './src/assets/Screens/test';
-import Modalst from './src/assets/Screens/modalt1';
+
 import {SafeAreaView} from 'react-native-safe-area-context';
+import { ScrollView } from 'react-native-gesture-handler';
 function HomeScreen({navigation}) {
   return (
     <SafeAreaView style={{flex: 1}}>
-      <View>
+   
+      <View style={{alignSelf:'center'}}>
         <Text>Click on the Icons to move to the desired location</Text>
       </View>
 
@@ -27,7 +29,8 @@ function HomeScreen({navigation}) {
           flex: 1,
           
           alignItems: 'center',
-          justifyContent: 'space-between',
+          justifyContent: 'space-evenly',
+          alignSelf:"center",
           flexDirection: 'column',
         }}>
         <TouchableOpacity onPress={() => navigation.navigate('Insurence')}>
@@ -65,11 +68,12 @@ function HomeScreen({navigation}) {
           <Text>Modal</Text>
         </TouchableOpacity>
         <View style={{height: 20}}></View>
-        <TouchableOpacity onPress={() => navigation.navigate('Test')}>
+        {/* <TouchableOpacity onPress={() => navigation.navigate('Test')}>
           <Icon name="hospital" size={30} color={'black'} />
           <Text>Test Screen</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
+      
     </SafeAreaView>
   );
 }
