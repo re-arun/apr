@@ -124,6 +124,7 @@ const styles = StyleSheet.create({
     width: width * 0.9,
     alignSelf: 'center',
     height: 25,
+    color:'black',
   },
   ht2: {
     width: width * 0.9,

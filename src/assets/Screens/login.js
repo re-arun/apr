@@ -53,13 +53,13 @@ const Login = ({navigation}) => {
             <View style={styles.imvi}>
             <TouchableOpacity>
 
-            <Text>+91</Text>
+            <Text style={{color:'black'}}>+91</Text>
             </TouchableOpacity>
             </View>
             <View style={styles.icvi}>
             <TouchableOpacity>
 
-              <Icon name="angle-down" />
+              <Icon name="angle-down"  color={'black'} />
               
             </TouchableOpacity>
             

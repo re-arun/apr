@@ -31,7 +31,7 @@ const Register = ({navigation}) => (
         </View>
         <View style={styles.icvi}>
           <TouchableOpacity>
-            <Icon name="angle-down" />
+            <Icon name="angle-down"  color={'black'}/>
           </TouchableOpacity>
         </View>
         <View style={styles.icvi}>

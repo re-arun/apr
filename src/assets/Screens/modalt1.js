@@ -289,7 +289,7 @@ const styles = StyleSheet.create({
     fontSize:26,
     textAlign: 'center',
     fontWeight:'bold', 
-    
+    color:'black'
     
   },
   modalTextt: {
@@ -299,6 +299,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flex: 0, flexWrap: 'wrap',
     lineHeight:40,
+    color:'black'
   
     
   },
@@ -309,6 +310,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     flex: 0, flexWrap: 'wrap',
     lineHeight:20,
+    color:'black'
     
   },
   
